@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tooltip</title>
+	<style type="text/css">
+		.tooltip {
+			display: inline-block;
+			position: relative;
+		}
+
+		.tooltip:hover:after {
+			background: grey;
+			border-radius: 5px;
+			bottom: 26px;
+			color: #fff;
+			content: attr(title);
+			left: 10%;
+			padding: 5px 15px;
+			position: absolute;
+			z-index: 98;
+			width: 120px;
+		}
+
+		.tooltip:hover:before {
+			border: solid;
+			border-color: gold transparent;
+			border-width: 6px 6px 0 6px;
+			bottom: 20px;
+			content: "";
+			left: 10%;
+			position: absolute;
+			z-index: 99;
+		}
+		.container {
+			margin-top: 50px;
+			margin-left: 40px;
+		}
+		a {
+			display: inline-block;
+			width: 30px;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+<a href="#" title="Less Than" class="tooltip">
+	<span title="">&lt;</span>
+</a>
+
+<a href="#" title="Greater Than" class="tooltip">
+	<span title="">&gt;</span>
+</a>
+
+<a href="#" title="Left Parenthesis" class="tooltip">
+	<span title="">(</span>
+</a>
+
+<a href="#" title="Right Parenthesis" class="tooltip">
+	<span title="">)</span>
+</a>
+
+<a href="#" title="Left Bracket" class="tooltip">
+	<span title="">[</span>
+</a>
+
+<a href="#" title="Right Bracket" class="tooltip">
+	<span title="">]</span>
+</a>
+
+<a href="#" title="Left Brace" class="tooltip">
+	<span title="">{</span>
+</a>
+
+<a href="#" title="Right Brace" class="tooltip">
+	<span title="">}</span>
+</a>
+
+
+<a href="#" title="Slash" class="tooltip">
+	<span title="">/</span>
+</a>
+
+<a href="#" title="Backslash" class="tooltip">
+	<span title="">\</span>
+</a>
+
+<a href="#" title="Colon" class="tooltip">
+	<span title="">:</span>
+</a>
+
+<a href="#" title="Semicolon" class="tooltip">
+	<span title="">;</span>
+</a>
+
+<a href="#" title="At Sign" class="tooltip">
+	<span title="">@</span>
+</a>
+
+<a href="#" title="Number Sign(hash)" class="tooltip">
+	<span title="">#</span>
+</a>
+
+<a href="#" title="Caret" class="tooltip">
+	<span title="">^</span>
+</a>
+
+<a href="#" title="Tilde" class="tooltip">
+	<span title="">~</span>
+</a>
+
+<a href="#" title="Ampersand" class="tooltip">
+	<span title="">&</span>
+</a>
+
+<a href="#" title="Vertical Bar" class="tooltip">
+	<span title="">|</span>
+</a>
+
+<a href="#" title="Asterisk" class="tooltip">
+	<span title="">*</span>
+</a>
+
+<a href="#" title="Grave Accent(backtick)" class="tooltip">
+	<span title="">`</span>
+</a>
+
+<a href="https://www.owasp.org/index.php/Password_special_characters" title="Special Characters" class="tooltip">
+	<span title="">Special Characters</span>
+</a>
+
+	</div>
+</body>
+</html>
